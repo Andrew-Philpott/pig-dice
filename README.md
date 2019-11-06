@@ -3,9 +3,6 @@
 #### By _**Andrew Philpott**_
 ## Description
 _Challenge an opponent to rolling a die to see who can score 100 points first. Players can choose a die with a number of sides between 6 and 12._
-* _Spec: The program should return the number value provided by the player._
-    * Input: "7"
-    * Output: "7"
 
 * _Spec: The program should notify the user that a number value needs to be provided when the input value is not a number._
     * Input: "Hello World"

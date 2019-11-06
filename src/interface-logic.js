@@ -1,3 +1,5 @@
 export function CheckUserInputtedPigDieSideCount(userInputtedPigDieSideCountArgument) {
-  return userInputtedPigDieSideCountArgument;
+  if (!Number.isInteger(userInputtedPigDieSideCountArgument)) {
+    return "Please provide a valid number";
+  }
 };
