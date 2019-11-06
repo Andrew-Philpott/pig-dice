@@ -7,6 +7,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "7"
     * Output: "7"
 
+* _Spec: The program should notify the user that a number value needs to be provided when the input value is an empty string._
+    * Input: ""
+    * Output: "Please provide a valid number"
+    
 ## Setup/Installation Requirements
 _Clone this repository._
 
