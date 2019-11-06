@@ -3,9 +3,9 @@
 #### By _**Andrew Philpott**_
 ## Description
 _Challenge an opponent to rolling a die to see who can score 100 points first. Players can choose a die with a number of sides between 6 and 12._
-* _Spec: The program should notify the user that a number value must be entered to begin the game._
-    * Input: ""
-    * Output: "Please enter a number value to start the game"
+* _Spec: The program should return the number value provided by the player._
+    * Input: "7"
+    * Output: "7"
 
 ## Setup/Installation Requirements
 _Clone this repository._
