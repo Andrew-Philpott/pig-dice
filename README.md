@@ -11,7 +11,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 * _Spec: The program should return the number value provided by the player if it was between 6 and 12._
     * Input: "7"
     * Output: "7"
-    
+
+* _Spec: The program should notify the user that the value needs to be between 6 and 12._
+    * Input: "20"
+    * Output: "Please provide a value between 6 and 12"
 ## Setup/Installation Requirements
 _Clone this repository._
 
