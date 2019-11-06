@@ -8,6 +8,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "Hello World"
     * Output: "Please provide a valid number"
 
+* _Spec: The program should return the number value provided by the player if it was between 6 and 12._
+    * Input: "7"
+    * Output: "7"
+    
 ## Setup/Installation Requirements
 _Clone this repository._
 
