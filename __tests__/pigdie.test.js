@@ -1,4 +1,4 @@
-import { PigDie } from './..src/pigdie.js';
+import { PigDie } from './../src/pigdie.js';
 
 describe('PigDie', () => {
 
