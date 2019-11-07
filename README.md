@@ -35,6 +35,7 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 * _Spec: For each role that is not equal to 1, the turn score value should increase by the pigdie value._
     * Input: "turn score before roll: 0, rolled pigdie value: 6"
     * Output: "Turn Score for next roll: 6"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 

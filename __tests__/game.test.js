@@ -12,9 +12,11 @@ describe('Game', () => {
   });
 
   test('The checkDieValue should increase the turn score when the value is greater than 1', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
     var game = new Game(playerOne, playerTwo);
     var turnScoreBefore = game.turnScore;
     game.checkDieValue(6);
-    expect(this.turnScore).toEqual(turnScoreBefore + 6);
+    expect(game.turnScore).toEqual(turnScoreBefore + 6);
   });
 });
