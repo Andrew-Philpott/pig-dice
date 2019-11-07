@@ -1,2 +1,3 @@
-export function PigDie() {
+export function PigDie(numberOfSidesArg) {
+  this.numberOfSides = numberOfSidesArg;
 };
