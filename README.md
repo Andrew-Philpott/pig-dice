@@ -15,6 +15,11 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 * _Spec: The program should notify the user that the value needs to be between 6 and 12._
     * Input: "20"
     * Output: "Please provide a value between 6 and 12"
+
+* _Spec: The program should correctly make a pigdie object with its number of sides equal to the user provided value._
+    * Input: "6"
+    * Output: "numberOfSides = 6"
+    
 ## Setup/Installation Requirements
 _Clone this repository._
 
