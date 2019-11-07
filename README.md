@@ -23,6 +23,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 * _Spec: The program should display a number value between 1 and the user defined number of sides value when the pigdie is rolled._
     * Input: "7"
     * Output "1 or 2 or 3 or 4 or 5 or 6 or 7"
+
+* _Spec: The program should correctly create a player with the user provided name and a score of 0_
+    * Input: "Andrew"
+    * Output "name: 'Andrew' score: '0'"
     
 ## Setup/Installation Requirements
 _Clone this repository._
