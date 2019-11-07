@@ -27,6 +27,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 * _Spec: The program should correctly create a player with the user provided name and a score of 0_
     * Input: "Andrew"
     * Output "name: 'Andrew' score: '0'"
+
+* _Spec: The program should correctly make a game object with two players and a turn score set to 0_
+    * Input: "Andrew, George"
+    * Output: "Player One: Andrew, Player Two: George, Turn Score: 0"
     
 ## Setup/Installation Requirements
 _Clone this repository._
