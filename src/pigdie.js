@@ -1,2 +1,2 @@
-export function Pigdie() {
+export function PigDie() {
 };
