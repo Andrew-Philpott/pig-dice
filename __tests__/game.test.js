@@ -1,5 +1,6 @@
 import { Game } from './../src/game.js';
 import { Player } from './../src/player.js';
+import { PigDie } from './../src/pigdie.js';
 
 describe('Game', () => {
   test('The program should correctly make a game object with two players and a turn score set to 0', () => {
@@ -60,5 +61,13 @@ describe('Game', () => {
     game.turnScore += 10;
     game.resetTurnScore();
     expect(game.turnScore).toEqual(0);
+  });
+
+  test('The program should change the current player after a 1 is rolled', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    game.checkDieValue(1);
+    expect(game.currentPlayer).toEqual(playerTwo);
   });
 });

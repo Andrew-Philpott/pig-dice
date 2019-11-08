@@ -56,6 +56,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: ""
     * Output: "0"
 
+  * _Spec: The program should change the current player after a 1 is rolled on the pigdie._
+    * Input: "1"
+    * Output: "false"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 
