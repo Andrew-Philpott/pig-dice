@@ -20,4 +20,5 @@ Game.prototype.changeCurrentPlayer = function() {
 };
 
 Game.prototype.checkPlayerScore = function() {
+  return false;
 };
