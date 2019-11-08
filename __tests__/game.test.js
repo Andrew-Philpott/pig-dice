@@ -42,4 +42,13 @@ describe('Game', () => {
       playerOne.score += 100;
       expect(game.checkPlayerScore()).toEqual(true);
     });
+
+    test('The program should add the turn score to the current players score', () => {
+      var playerOne = new Player('Andrew');
+      var playerTwo = new Player('George');
+      var game = new Game(playerOne, playerTwo);
+      game.turnScore += 10;
+      game.hold();
+      expect(game.currentPlayer.score).toEqual(10);
+    });
 });

@@ -25,3 +25,6 @@ Game.prototype.checkPlayerScore = function() {
   }
   return false;
 };
+
+Game.prototype.hold = function() {
+};
