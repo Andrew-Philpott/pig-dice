@@ -27,4 +27,5 @@ Game.prototype.checkPlayerScore = function() {
 };
 
 Game.prototype.hold = function() {
+  this.currentPlayer.score += this.turnScore;
 };
