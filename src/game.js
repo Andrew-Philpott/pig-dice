@@ -20,5 +20,8 @@ Game.prototype.changeCurrentPlayer = function() {
 };
 
 Game.prototype.checkPlayerScore = function() {
+  if (this.currentPlayer.score >= 100) {
+    return true;
+  }
   return false;
 };
