@@ -60,6 +60,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "1"
     * Output: "false"
 
+  * _Spec: The program should reset the turn score after a 1 is rolled on the pigdie._
+    * Input: "1"
+    * Output: "0"
+    
 ## Setup/Installation Requirements
 _Clone this repository._
 

@@ -70,4 +70,12 @@ describe('Game', () => {
     game.checkDieValue(1);
     expect(game.currentPlayer).toEqual(playerTwo);
   });
+  
+  test('The program should reset the turn score after a 1 is rolled', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    game.checkDieValue(1);
+    expect(game.turnScore).toEqual(0);
+  })
 });
