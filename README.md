@@ -36,6 +36,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "turn score before roll: 0, rolled pigdie value: 6"
     * Output: "Turn Score for next roll: 6"
 
+* _Spec: The program should be able to change the current player to x, where x is the other player._
+    * Input: ""
+    * Output: "Player x's turn "
+    
 ## Setup/Installation Requirements
 _Clone this repository._
 

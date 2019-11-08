@@ -19,4 +19,12 @@ describe('Game', () => {
     game.checkDieValue(6);
     expect(game.turnScore).toEqual(turnScoreBefore + 6);
   });
+  test('The program should be able to change the current player', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    game.currentPlayer = game.players[1];
+    game.changeCurrentPlayer();
+    expect(game.currentPlayer).toEqual(game.players[0]);
+  });
 });
