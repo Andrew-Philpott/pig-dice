@@ -51,7 +51,11 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
   * _Spec: The program should add the turn score to the current players score when they choose to hold._
     * Input: "Current player score at 20, turn score at 10, choose to hold"
     * Output: "player score at 30"
-    
+
+  * _Spec: The program should be able to reset the turn score to 0._
+    * Input: ""
+    * Output: "0"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 

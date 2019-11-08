@@ -1,7 +1,8 @@
-export function Game(playerOne, playerTwo) {
+export function Game(playerOne, playerTwo, pigDie) {
   this.players = [playerOne, playerTwo];
   this.turnScore = 0;
   this.currentPlayer = this.players[0];
+  this.pigDie = pigDie;
 };
 
 Game.prototype.checkDieValue = function(valueOfPigDie) {
@@ -28,4 +29,7 @@ Game.prototype.checkPlayerScore = function() {
 
 Game.prototype.hold = function() {
   this.currentPlayer.score += this.turnScore;
+};
+
+Game.prototype.resetTurnScore = function() {
 };

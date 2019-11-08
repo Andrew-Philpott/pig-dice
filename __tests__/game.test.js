@@ -19,6 +19,7 @@ describe('Game', () => {
     game.checkDieValue(6);
     expect(game.turnScore).toEqual(turnScoreBefore + 6);
   });
+
   test('The program should be able to change the current player', () => {
     var playerOne = new Player('Andrew');
     var playerTwo = new Player('George');
@@ -28,27 +29,36 @@ describe('Game', () => {
     expect(game.currentPlayer).toEqual(game.players[0]);
   });
 
-    test('The program should check the score of the current player and return false if the score is not over 100', () => {
-      var playerOne = new Player('Andrew');
-      var playerTwo = new Player('George');
-      var game = new Game(playerOne, playerTwo);
-      expect(game.checkPlayerScore()).toEqual(false);
-    });
+  test('The program should check the score of the current player and return false if the score is not over 100', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    expect(game.checkPlayerScore()).toEqual(false);
+  });
 
-    test('The program should check the score of the current player and return true if it is greater than or equal to 100', () => {
-      var playerOne = new Player('Andrew');
-      var playerTwo = new Player('George');
-      var game = new Game(playerOne, playerTwo);
-      playerOne.score += 100;
-      expect(game.checkPlayerScore()).toEqual(true);
-    });
+  test('The program should check the score of the current player and return true if it is greater than or equal to 100', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    playerOne.score += 100;
+    expect(game.checkPlayerScore()).toEqual(true);
+  });
 
-    test('The program should add the turn score to the current players score', () => {
-      var playerOne = new Player('Andrew');
-      var playerTwo = new Player('George');
-      var game = new Game(playerOne, playerTwo);
-      game.turnScore += 10;
-      game.hold();
-      expect(game.currentPlayer.score).toEqual(10);
-    });
+  test('The program should add the turn score to the current players score', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    game.turnScore += 10;
+    game.hold();
+    expect(game.currentPlayer.score).toEqual(10);
+  });
+
+  test('The program should reset the turn score back to 0', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    game.turnScore += 10;
+    game.resetTurnScore();
+    expect(game.turnScore).toEqual(0);
+  });
 });
