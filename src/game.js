@@ -18,3 +18,6 @@ Game.prototype.changeCurrentPlayer = function() {
     this.currentPlayer = (this.players[this.players.indexOf(currentPlayer) + 1]);
   }
 };
+
+Game.prototype.checkPlayerScore = function() {
+};

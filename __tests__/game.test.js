@@ -27,4 +27,11 @@ describe('Game', () => {
     game.changeCurrentPlayer();
     expect(game.currentPlayer).toEqual(game.players[0]);
   });
+
+    test('The program should check the score of the current player and return false if the score is not over 100', () => {
+      var playerOne = new Player('Andrew');
+      var playerTwo = new Player('George');
+      var game = new Game(playerOne, playerTwo);
+      expect(game.checkPlayerScore()).toEqual(false);
+    });
 });

@@ -38,7 +38,11 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 
 * _Spec: The program should be able to change the current player to x, where x is the other player._
     * Input: ""
-    * Output: "Player x's turn "
+    * Output: "Player x's turn"
+
+* _Spec: The program should check the current player score and return false if it is not greater than or equal to 100._
+    * Input: "0"
+    * Output: "false"
     
 ## Setup/Installation Requirements
 _Clone this repository._
