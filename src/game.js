@@ -32,4 +32,5 @@ Game.prototype.hold = function() {
 };
 
 Game.prototype.resetTurnScore = function() {
+  this.turnScore = 0;
 };
