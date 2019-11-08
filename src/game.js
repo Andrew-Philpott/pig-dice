@@ -11,4 +11,10 @@ Game.prototype.checkDieValue = function(valueOfPigDie) {
 };
 
 Game.prototype.changeCurrentPlayer = function() {
+  var currentPlayer = this.currentPlayer;
+  if ((this.players.indexOf(currentPlayer) + 1) === this.players.length) {
+    this.currentPlayer = this.players[0];
+  } else {
+    this.currentPlayer = (this.players[this.players.indexOf(currentPlayer) + 1]);
+  }
 };
