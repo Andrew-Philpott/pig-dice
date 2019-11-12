@@ -9,7 +9,8 @@ Game.prototype.checkDieValue = function(valueOfPigDie) {
   if (valueOfPigDie !== 1) {
     this.turnScore += valueOfPigDie;
   } else {
-    return true;
+    this.resetTurnScore();
+    this.changeCurrentPlayer();
   }
 };
 

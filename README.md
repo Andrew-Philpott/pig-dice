@@ -64,6 +64,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "1"
     * Output: "Turn Score: 0"
 
+  * _Spec: The program should reset the turn score to 0 and change the current player if the players score is less than 100._
+    * Input: "60"
+    * Output: "Next players turn, turn score: 0"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 
