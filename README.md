@@ -68,6 +68,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "60"
     * Output: "Next players turn, turn score: 0"
 
+  * _Spec: The program should start a new game when the end game method is called. The game object's properties should be reset._
+    * Input: "Player 1 wins!"
+    * Output: "Start new game"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 

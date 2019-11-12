@@ -90,4 +90,16 @@ describe('Game', () => {
     expect(game.turnScore).toEqual(0);
     expect(game.currentPlayer).toEqual(playerTwo);
   });
+
+  test('The program should reset the game when a players score is greater than or equal to 100', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var game = new Game(playerOne, playerTwo);
+    playerOne.score += 100;
+    game.checkPlayerScore();
+    expect(game.turnScore).toEqual(0);
+    expect(game.players.length).toEqual(0);
+    expect(game.currentPlayer).toBeNull();
+    expect(game.pigDie).toBeNull();
+  });
 });

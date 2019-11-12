@@ -27,6 +27,8 @@ Game.prototype.checkPlayerScore = function() {
   if (this.currentPlayer.score >= 100) {
     return true;
   }
+  this.resetTurnScore();
+  this.changeCurrentPlayer();
   return false;
 };
 
@@ -37,3 +39,6 @@ Game.prototype.hold = function() {
 Game.prototype.resetTurnScore = function() {
   this.turnScore = 0;
 };
+
+Game.prototype.endGame = function() {
+}
