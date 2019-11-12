@@ -84,6 +84,7 @@ describe('Game', () => {
     var playerOne = new Player('Andrew');
     var playerTwo = new Player('George');
     var game = new Game(playerOne, playerTwo);
+    game.turnScore += 99;
     playerOne.score += 99;
     game.checkPlayerScore();
     expect(game.turnScore).toEqual(0);
