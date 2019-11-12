@@ -42,4 +42,5 @@ Game.prototype.resetTurnScore = function() {
 };
 
 Game.prototype.endGame = function() {
-};
+  return null;
+}
