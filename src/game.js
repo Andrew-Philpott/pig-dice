@@ -25,6 +25,7 @@ Game.prototype.changeCurrentPlayer = function() {
 
 Game.prototype.checkPlayerScore = function() {
   if (this.currentPlayer.score >= 100) {
+    this.endGame(this);
     return true;
   }
   this.resetTurnScore();
@@ -41,4 +42,4 @@ Game.prototype.resetTurnScore = function() {
 };
 
 Game.prototype.endGame = function() {
-}
+};

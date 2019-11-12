@@ -95,11 +95,9 @@ describe('Game', () => {
     var playerOne = new Player('Andrew');
     var playerTwo = new Player('George');
     var game = new Game(playerOne, playerTwo);
+    game.turnScore += 100;
     playerOne.score += 100;
-    game.checkPlayerScore();
-    expect(game.turnScore).toEqual(0);
-    expect(game.players.length).toEqual(0);
-    expect(game.currentPlayer).toBeNull();
-    expect(game.pigDie).toBeNull();
+    game = game.endGame();
+    expect(game).toBeNull();
   });
 });
