@@ -58,12 +58,12 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
 
   * _Spec: The program should change the current player after a 1 is rolled on the pigdie._
     * Input: "1"
-    * Output: "false"
+    * Output: "Next players turn"
 
   * _Spec: The program should reset the turn score after a 1 is rolled on the pigdie._
     * Input: "1"
-    * Output: "0"
-    
+    * Output: "Turn Score: 0"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 
