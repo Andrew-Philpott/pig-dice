@@ -72,6 +72,10 @@ _Challenge an opponent to rolling a die to see who can score 100 points first. P
     * Input: "Player 1 wins!"
     * Output: "Start new game"
 
+  * _Spec: The program should check the players score after they choose to hold._
+    * Input: "Hold, turnscore: 66"
+    * Output: "Player score 66"
+
 ## Setup/Installation Requirements
 _Clone this repository._
 

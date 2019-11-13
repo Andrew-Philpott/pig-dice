@@ -111,4 +111,15 @@ describe('Game', () => {
     game = game.endGame();
     expect(game).toBeNull();
   });
+
+  test('The program should check the players score after they chose to hold', () => {
+    var playerOne = new Player('Andrew');
+    var playerTwo = new Player('George');
+    var players = [playerOne, playerTwo];
+    var game = new Game(players, 6);
+    game.turnScore += 66;
+    game.hold();
+    expect(game.turnScore).toEqual(0);
+    expect(game.currentPlayer).toEqual(playerTwo);
+  });
 });

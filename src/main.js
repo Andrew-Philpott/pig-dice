@@ -13,7 +13,5 @@ $(document).ready(function() {
     var inputtedPigDieNumberOfSides = $("input#pigdie-number-input").val();
 
     game = new Game(inputtedPlayerOneName, inputtedPlayerTwoName, inputtedPigDieNumberOfSides);
-
-
   });
 });
