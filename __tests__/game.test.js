@@ -55,9 +55,10 @@ describe('Game', () => {
     var playerTwo = new Player('George');
     var players = [playerOne, playerTwo];
     var game = new Game(players, 6);
+    var currentPlayer = game.currentPlayer;
     game.turnScore += 10;
     game.hold();
-    expect(game.currentPlayer.score).toEqual(10);
+    expect(currentPlayer.score).toEqual(10);
   });
 
   test('The program should be able to reset the turn score back to 0', () => {

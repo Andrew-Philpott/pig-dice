@@ -36,6 +36,7 @@ export class Game {
 
   hold() {
     this.currentPlayer.score += this.turnScore;
+    this.checkPlayerScore();
   };
 
   resetTurnScore() {
