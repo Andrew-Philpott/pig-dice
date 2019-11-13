@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pig Dice</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Enter the names of both players and the number sided die you would like to use. Die can have between 6 and 12 sides for this game.</h2>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="user-input">
+            <form id="game-form">
+              <div class="form-group">
+                <label for="player-one-name-input">Player 1</label>
+                <input type="text" class="form-control" id="player-one-name-input">
+              </div>
+              <div class="form-group">
+                <label for="player-two-name-input">Player 2</label>
+                <input type="text" class="form-control" id="player-two-name-input">
+              </div>
+              <div class="form-group">
+                <label for="user-number-input">Number</label>
+                <input type="text" class="form-control" id="pigdie-number-input">
+              </div>
+              <br>
+              <button type="submit" class="btn" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <img src="img/robot.jpg" alt="">
+        </div>
+      </div>
+      <div id="game">
+      </div>
+    </div>
+  </body>
+</html>
