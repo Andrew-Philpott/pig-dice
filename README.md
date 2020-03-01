@@ -13,11 +13,6 @@ _Challenge an opponent to see who can get to 100 points first. If the player cli
   - Input: "Hello World"
   - Output: "Please provide a valid number"
 
-- _Spec: The program should return the number value provided by the player if it was between 6 and 12._
-
-  - Input: "7"
-  - Output: "7"
-
 - _Spec: The program should notify the user that the value needs to be between 6 and 12._
 
   - Input: "20"
@@ -99,9 +94,11 @@ _Challenge an opponent to see who can get to 100 points first. If the player cli
 
 ## Setup/Installation Requirements
 
-_Clone this repository._
+_Clone this repository_
 
-_Open index.html with a web browser._
+_\$ npm install_
+
+_\$ npm run start_
 
 ## Support and contact details
 
