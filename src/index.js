@@ -18,28 +18,25 @@ $(document).ready(function() {
   attachGameListeners();
 
   $("form#game-form").submit(function(event) {
-    let inputtedPigDieNumberOfSides = $("input#user-number-input").val();
+    const inputtedPigDieNumberOfSides = $("input#user-number-input").val();
     if (
       CheckUserInputtedPigDieSideCount(inputtedPigDieNumberOfSides) === true
     ) {
-      event.preventDefault();
-      let playersDisplay = $("#players");
-      let formContainer = $("#form-container");
-      let gameDisplay = $("#game-container");
-      let inputtedPlayerNames = [
+      const playersDisplay = $("#players");
+      const formContainer = $("#form-container");
+      const gameDisplay = $("#game-container");
+      const inputtedPlayerNames = [
         new Player($("input#player-one-name-input").val()),
         new Player($("input#player-two-name-input").val())
       ];
-      let pigDie = new PigDie(inputtedPigDieNumberOfSides);
+      const pigDie = new PigDie(inputtedPigDieNumberOfSides);
       game = new Game(inputtedPlayerNames, pigDie);
       formContainer.toggle();
       playersDisplay.html(displayGame(game));
       gameDisplay.toggle();
       currentPlayerDisplay(game);
       gameListener(game);
-    } else {
-      event.preventDefault();
-      $("#errors").html("<p>Please enter a number between 6 and 12</p>");
     }
+    event.preventDefault();
   });
 });

@@ -1,25 +1,25 @@
 import $ from "jquery";
 
-// import { Game } from './game.js';
 export function CheckUserInputtedPigDieSideCount(
   userInputtedPigDieSideCountArgument
 ) {
-  var userInputToNumber = parseInt(userInputtedPigDieSideCountArgument);
+  const userInputToNumber = parseInt(userInputtedPigDieSideCountArgument);
   if (userInputToNumber >= 6 && userInputToNumber <= 12) {
     return true;
   } else {
+    $("#errors").html("<p>Please enter a number between 6 and 12.</p>");
     return false;
   }
 }
 
 export function resetInputs(inputArray) {
-  for (var i = 0; i < inputArray.length; i++) {
+  for (let i = 0; i < inputArray.length; i++) {
     $(inputArray[i]).val("");
   }
 }
 export function attachGameListeners() {
-  var gameContainerHTML = $("#game-container");
-  var formContainerHTML = $("#form-container");
+  const gameContainerHTML = $("#game-container");
+  const formContainerHTML = $("#form-container");
   gameContainerHTML.on("click", "button#reset-game-button", function() {
     gameContainerHTML.toggle();
     let inputs = [
@@ -39,10 +39,10 @@ export function currentPlayerDisplay(game) {
 }
 
 export function gameListener(game) {
-  var gameContainerHTML = $("#game-container");
+  const gameContainerHTML = $("#game-container");
   gameContainerHTML.on("click", "#roll-pigdie-button", function() {
     game.checkDieValue(game.pigDie.rollDie());
-    $("#turn-score").text(game.turnScore);
+    $("#turn-score").text(game.getTurnScore());
     currentPlayerDisplay(game);
   });
 
@@ -50,10 +50,15 @@ export function gameListener(game) {
     game.hold();
     let gameOver = game.checkPlayerScore();
     if (gameOver) {
-      var formContainerHTML = $("#form-container");
+      const formContainerHTML = $("#form-container");
       alert(game.currentPlayer.getName() + " wins!");
       gameContainerHTML.toggle();
-      resetInputs(gameContainerHTML.find("input"));
+      let inputs = [
+        $("#player-one-name-input"),
+        $("#player-two-name-input"),
+        $("#user-number-input")
+      ];
+      resetInputs(inputs);
       formContainerHTML.toggle();
     }
     let playersDisplay = $("#players");

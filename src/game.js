@@ -5,15 +5,16 @@ export class Game {
     this.currentPlayer = this.players[0];
     this.pigDie = pigDie;
   }
+  getTurnScore() {
+    return this.turnScore;
+  }
 
   checkDieValue(valueOfPigDie) {
     if (valueOfPigDie !== 1) {
       this.turnScore += valueOfPigDie;
-      return valueOfPigDie;
     } else {
-      this.resetTurnScore();
+      this.turnScore = 0;
       this.changeCurrentPlayer();
-      return 0;
     }
   }
 
