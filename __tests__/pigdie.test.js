@@ -12,5 +12,5 @@ describe('PigDie', () => {
     expect(pigdie.rollDie()).toBeGreaterThanOrEqual(1);
     expect(pigdie.rollDie()).toBeLessThanOrEqual(7);
   });
-  
+
 });

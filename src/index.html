@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>Pig Dice</title>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Pig Dice</h1>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Enter the names of both players and the number sided die you would like to use. Die can have between 6 and 12 sides for this game.</h2>
-          <br>
+      <div id="header" class="row">
+        <div class="col-8">
+          <h1>Pig Dice</h1>
+          <p>
+            Enter the names of both players and the number sided die you would
+            like to use. Die can have between 6 and 12 sides for this game.
+          </p>
         </div>
+        <div class="col-4">
+          <div id="pig-img"></div>
+        </div>
+        <hr />
       </div>
-      <div class="row">
-        <div class="col-xs-6">
-          <div id="user-input">
+      <div id="form-container">
+        <div class="row">
+          <div class="col-xs-12">
             <form id="game-form">
               <div class="form-group">
                 <label for="player-one-name-input">Player 1</label>
-                <input type="text" class="form-control" id="player-one-name-input">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="player-one-name-input"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="player-two-name-input">Player 2</label>
-                <input type="text" class="form-control" id="player-two-name-input">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="player-two-name-input"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="user-number-input">Number</label>
-                <input type="text" class="form-control" id="pigdie-number-input">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="user-number-input"
+                />
               </div>
-              <br>
-              <button type="submit" class="btn" name="button">Submit</button>
+              <div id="errors"></div>
+              <button type="submit" class="btn btn-primary" name="button">
+                Start Game
+              </button>
             </form>
           </div>
         </div>
-        <div class="col-xs-6">
-          <img src="img/robot.jpg" alt="">
-        </div>
       </div>
-      <div id="game">
+      <div id="game-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="game-buttons-container">
+              <button
+                type="button"
+                id="roll-pigdie-button"
+                class="btn btn-primary game-button"
+                name="button"
+              >
+                Roll Die
+              </button>
+              <button
+                type="button"
+                id="hold-button"
+                class="btn btn-primary game-button"
+                name="button"
+              >
+                Hold
+              </button>
+              <button
+                type="button"
+                id="reset-game-button"
+                name="button"
+                class="btn btn-primary game-button"
+              >
+                Reset Game
+              </button>
+            </div>
+            <div id="game">
+              <hr />
+              <div id="game-turn-info">
+                <p>Current player: <span id="current-player"></span></p>
+                <p>Turn Score: <span id="turn-score">0</span></p>
+              </div>
+              <br />
+              <div id="players"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
