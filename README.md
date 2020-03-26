@@ -60,37 +60,38 @@ _Challenge an opponent to see who can get to 100 points first. If the player cli
 
   - _Spec: The program should add the turn score to the current players score when they choose to hold._
 
-    - Input: "Current player score at 20, turn score at 10, choose to hold"
-    - Output: "player score at 30"
+  - Input: "Current player score at 20, turn score at 10, choose to hold"
+  - Output: "player score at 30"
 
   - _Spec: The program should be able to reset the turn score to 0._
 
-    - Input: ""
-    - Output: "0"
+  - Input: ""
+  - Output: "0"
 
   - _Spec: The program should change the current player after a 1 is rolled on the pigdie._
 
-    - Input: "1"
-    - Output: "Next players turn"
+  - Input: "1"
+  - Output: "Next players turn"
 
   - _Spec: The program should reset the turn score after a 1 is rolled on the pigdie._
 
-    - Input: "1"
-    - Output: "Turn Score: 0"
+  - Input: "1"
+  - Output: "Turn Score: 0"
 
   - _Spec: The program should reset the turn score to 0 and change the current player if the players score is less than 100._
 
-    - Input: "60"
-    - Output: "Next players turn, turn score: 0"
+  - Input: "60"
+  - Output: "Next players turn, turn score: 0"
 
   - _Spec: The program should start a new game when the end game method is called. The game object's properties should be reset._
 
-    - Input: "Player 1 wins!"
-    - Output: "Start new game"
+  - Input: "Player 1 wins!"
+  - Output: "Start new game"
 
   - _Spec: The program should check the players score after they choose to hold._
-    - Input: "Hold, turnscore: 66"
-    - Output: "Player score 66"
+  
+  - Input: "Hold, turnscore: 66"
+  - Output: "Player score 66"
 
 ## Setup/Installation Requirements
 
